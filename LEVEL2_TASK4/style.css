@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(1, 20, 29);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.login_box {
+    border-radius: 30px;
+    position: relative;
+    margin-top: 14%;
+    width: 300px;
+    height: 350px;
+    background-color: rgb(1, 20, 29);
+}
+
+h2 {
+    color: aqua;
+}
+
+form {
+    box-sizing: border-box;
+}
+
+.input_box {
+    max-width: 100%;
+}
+
+input {
+    color: aliceblue;
+    font-size: 17px;
+    padding: 4px 10px;
+    border-radius: 40px;
+    border: 2px solid rgb(14, 39, 51);
+    outline: none;
+    height: 45px;
+    width: 89%;
+    margin-top: 8%;
+    background-color: transparent;
+}
+
+.input_box label {
+    color: aliceblue;
+    position: absolute;
+    transition: 0.5s ease;
+    font-size: 18px;
+    pointer-events: none;
+    padding: 0 2px;
+    background-color: rgb(1, 20, 29);
+}
+
+.lable1 {
+    left: 13%;
+    top: 18%;
+}
+
+.lable2 {
+    left: 13%;
+    top: 39%;
+}
+
+.input_box input:focus~.lable1,
+.input_box input:valid~.lable1,
+.input_box input:focus~.lable2,
+.input_box input:valid~.lable2 {
+    transform: translateY(-109%);
+}
+
+.forgot_P {
+    margin-top: 11px;
+}
+
+.forgot_P a {
+    color: aliceblue;
+    font-size: large;
+}
+
+.btn {
+    width: 84%;
+    min-height: 40px;
+    margin: 7% 5%;
+    border: 2px solid aqua;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    outline: none;
+    color: rgb(30, 29, 29);
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.signup {
+    margin-top: -2%;
+}
+
+.signup a {
+    text-decoration: none;
+    color: aqua;
+    font-size: large;
+}
